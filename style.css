@@ -1051,7 +1051,7 @@ body:has(.present.active) {
   padding-inline: 0.6rem;
   position: relative;
 
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .material-symbols-outlined {
@@ -1083,7 +1083,7 @@ body:has(.present.active) {
   max-width: 380px;
   padding-inline: 16px;
   margin: auto;
-  padding-top: 24px;
+  padding-top: 16px;
 }
 
 .present-body .item {
