@@ -1,21 +1,21 @@
-const input = document.querySelector(".input-box");
-input.onclick = function () {
-    this.classList.toggle("open");
-    let list = this.nextElementSibling;
-    if (list.style.maxHeight) {
-        list.style.maxHeight = null;
-        list.style.boxShadow = null;
-    } else {
-        list.style.maxHeight = list.scrollHeight + "px";
-        list.style.boxShadow =
-            "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
-    }
-};
+// const input = document.querySelector(".input-box");
+// input.onclick = function () {
+//     this.classList.toggle("open");
+//     let list = this.nextElementSibling;
+//     if (list.style.maxHeight) {
+//         list.style.maxHeight = null;
+//         list.style.boxShadow = null;
+//     } else {
+//         list.style.maxHeight = list.scrollHeight + "px";
+//         list.style.boxShadow =
+//             "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
+//     }
+// };
 
 const rad = document.querySelectorAll(".radio");
 const checkedRad = document.querySelector('.radio:checked');
 
-input.innerHTML = checkedRad.nextElementSibling.querySelector('.name').innerHTML
+// input.innerHTML = checkedRad.nextElementSibling.querySelector('.name').innerHTML
 
 rad.forEach((item) => {
     item.addEventListener("change", () => {
