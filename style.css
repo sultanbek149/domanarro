@@ -412,17 +412,22 @@ body {
   background: #fff;
   font-family: "Open Sans", sans-serif;
 }
+
+@font-face {
+  font-family: "dior";
+  src: url("./dior.otf");
+}
+
 .logo p {
   font-family: Merriweather, serif;
 }
 
 .logo {
   margin-top: 5px;
-  margin-bottom: 5px;
   position: relative;
   z-index: 1;
-  font-size: 30px;
-  font-family: "Nova Mono", monospace;
+  font-size: 40px;
+  font-family: "dior", monospace;
   font-weight: 400;
 }
 
