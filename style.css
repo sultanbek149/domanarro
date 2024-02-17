@@ -834,8 +834,9 @@ a.ssolink {
 .list {
   position: absolute;
   top: 100%;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100.7%;
   height: fit-content;
   background: white;
   border-radius: 2mm;
@@ -1060,6 +1061,7 @@ body:has(.present.active) {
 }
 
 .back {
+  display: none;
   position: absolute;
   top: 3.4px;
 }

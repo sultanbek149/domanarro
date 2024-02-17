@@ -85,7 +85,6 @@ function reset() {
 
 const open = document.querySelector('#open')
 const present = document.querySelector('.present')
-const overlay = document.querySelector('.overlay')
 const back = document.querySelector('.back')
 const services = document.querySelectorAll('[data-service]')
 
@@ -97,7 +96,6 @@ const services = document.querySelectorAll('[data-service]')
 
 back.addEventListener('click', () => {
     present.classList.toggle('active')
-    overlay.style.display = 'none'
 
     // document.querySelector('#id11').checked = true
     // input.innerHTML = document.querySelector('#id11').nextElementSibling.querySelector('.name').innerHTML;
@@ -105,10 +103,9 @@ back.addEventListener('click', () => {
 
 services.forEach((item) => {
     item.addEventListener("click", () => {
-        input.innerHTML = item.querySelector('.service').innerHTML;
+        // input.innerHTML = item.querySelector('.service').innerHTML;
         back.click()
 
-
-        input.click();
+        // input.click();
     });
 });
