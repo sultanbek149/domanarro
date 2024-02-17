@@ -29,7 +29,7 @@
 
 
     <script defer src="app.js"></script>
-    <title>Document</title>
+    <title>Domanarro</title>
 </head>
 
 <body>
@@ -120,8 +120,18 @@
                                         <input type="tel" name="phone" id="phone" placeholder="Введите номер телефона"
                                             required>
                                     </div>
-                                    <div class="field dropdown padding-bottom--15">
-                                        <div class="title-drop">Вид услуги</div>
+                                    <div class="field padding-bottom--24">
+                                        <label for="city">Страна и город</label>
+                                        <input type="text" name="city" id="city"
+                                            placeholder="Введите свое местоположение" required>
+                                    </div>
+                                    <div class="field padding-bottom--24">
+                                        <label for="district">Район (не обязательно)</label>
+                                        <input type="text" name="district" id="district"
+                                            placeholder="Введите свой район">
+                                    </div>
+                                    <div class="field dropdown padding-bottom--24">
+                                        <div class="title-drop">Срок аренды</div>
                                         <div class="input-box"></div>
                                         <div class="list">
 
@@ -147,10 +157,24 @@
                                             </label>
                                         </div>
                                     </div>
+
                                     <div class="field padding-bottom--24">
-                                        <label for="city">Город</label>
-                                        <input type="text" name="city" id="city" placeholder="г. Батуми" required>
+                                        <label for="date">Дата заселения</label>
+                                        <input type="text" name="date" id="date" placeholder="Введите дату заселения">
                                     </div>
+
+                                    <div class="field padding-bottom--24">
+                                        <label for="amount">Количество людей</label>
+                                        <input type="text" name="amount" id="amount"
+                                            placeholder="Введите дату заселения">
+                                    </div>
+
+                                    <div class="field padding-bottom--24">
+                                        <label for="сitizen">Гражданство (не обязательно)</label>
+                                        <input type="text" name="citizen" id="amount"
+                                            placeholder="Гражданство вашей страны">
+                                    </div>
+
                                     <!-- <div class="field padding-bottom--24">
                                         <label for="address">Адрес</label>
                                         <input type="text" name="address" id="address" placeholder="ул. Абая 102"
@@ -172,7 +196,7 @@
                                         </svg>
                                     </a>
                                 </span>
-                                <span><a>© Autopro</a></span>
+                                <span><a>© Domenarro</a></span>
                                 <span><a>Политика конфиденциальности</a></span>
                             </div>
                         </div>
