@@ -90,25 +90,23 @@ const back = document.querySelector('.back')
 const services = document.querySelectorAll('[data-service]')
 
 
-open.addEventListener('click', () => {
-    present.classList.toggle('active')
-    overlay.style.display = 'block'
-})
+// open.addEventListener('click', () => {
+//     present.classList.toggle('active')
+//     overlay.style.display = 'block'
+// })
 
 back.addEventListener('click', () => {
     present.classList.toggle('active')
     overlay.style.display = 'none'
 
-    document.querySelector('#id11').checked = true
-    input.innerHTML = document.querySelector('#id11').nextElementSibling.querySelector('.name').innerHTML;
-
+    // document.querySelector('#id11').checked = true
+    // input.innerHTML = document.querySelector('#id11').nextElementSibling.querySelector('.name').innerHTML;
 })
 
 services.forEach((item) => {
     item.addEventListener("click", () => {
         input.innerHTML = item.querySelector('.service').innerHTML;
-        present.classList.toggle('active')
-        overlay.style.display = 'none'
+        back.click()
 
 
         input.click();

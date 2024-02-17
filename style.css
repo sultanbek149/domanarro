@@ -999,13 +999,17 @@ a.ssolink {
   margin-bottom: 15px;
 }
 
+body:has(.present.active) {
+  overflow: hidden;
+}
+
 .present {
   background: #fff;
   position: fixed;
   z-index: 10;
   top: 0;
-  right: -90vw;
-  width: 90vw;
+  right: -100vw;
+  width: 100vw;
   bottom: 0;
   padding-bottom: 20px;
   color: #000;
@@ -1052,20 +1056,23 @@ a.ssolink {
 .material-symbols-outlined {
   text-align: center;
   padding-top: 0px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .back {
-  margin-top: 5.5px;
   position: absolute;
-  top: 0;
+  top: 3.4px;
+}
+
+.back span {
+  font-size: 34px;
 }
 
 .tbar-title {
   text-align: center;
   width: 100%;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.0109em;
 }
@@ -1078,9 +1085,10 @@ a.ssolink {
 }
 
 .present-body .item {
-  padding: 8px 15px 8px;
+  padding: 13px 25px 15px;
   pointer-events: all;
-  border: 1px solid rgba(19, 19, 19, 0.1);
+  cursor: pointer;
+  border: 2px solid rgba(19, 19, 19, 0.1);
   border-radius: 12px;
   width: 100% !important;
   margin-left: 0 !important;
@@ -1093,10 +1101,14 @@ a.ssolink {
   font-weight: 600;
 }
 
+.present-body .item:hover {
+  border: 2px solid #fc6;
+}
+
 .present-body .item img {
-  max-width: 42px;
-  max-height: 42px;
-  margin-right: 14px;
+  max-width: 36px;
+  max-height: 36px;
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
