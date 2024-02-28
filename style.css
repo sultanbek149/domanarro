@@ -628,6 +628,11 @@ a {
 .padding-bottom--24 {
   padding-bottom: 24px;
 }
+
+.padding-bottom--32 {
+  padding-bottom: 32px;
+}
+
 .padding-horizontal--48 {
   padding: 48px;
 }
@@ -1235,3 +1240,7 @@ body:has(.present.active) {
     margin-top: 10px;
   }
 }
+
+/* .container {
+  margin-bottom: 40px;
+} */
