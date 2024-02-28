@@ -83,37 +83,3 @@ function reset() {
     // address.value = ""
 }
 
-
-
-
-
-
-
-
-
-const open = document.querySelector('#open')
-const present = document.querySelector('.present')
-const back = document.querySelector('.back')
-const services = document.querySelectorAll('[data-service]')
-
-
-// open.addEventListener('click', () => {
-//     present.classList.toggle('active')
-//     overlay.style.display = 'block'
-// })
-
-back.addEventListener('click', () => {
-    present.classList.toggle('active')
-
-    // document.querySelector('#id11').checked = true
-    // input.innerHTML = document.querySelector('#id11').nextElementSibling.querySelector('.name').innerHTML;
-})
-
-services.forEach((item) => {
-    item.addEventListener("click", () => {
-        // input.innerHTML = item.querySelector('.service').innerHTML;
-        back.click()
-
-        // input.click();
-    });
-});

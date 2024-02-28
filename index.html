@@ -28,7 +28,7 @@
     <script defer src="swiper.js"></script>
 
 
-    <script defer src="app.js"></script>
+    <script defer src="main.js"></script>
     <title>Domanarro</title>
 </head>
 
@@ -42,28 +42,28 @@
         </div>
 
         <div class="images">
-            <a class="item">
+            <a class="item" id="estate">
                 <img src="estate.jpg" alt="est">
                 <div class="over">
                     <p>Недвижимость</p>
                 </div>
             </a>
-            <a class="item">
+            <a href="https://searadar.tp.st/txjL2crG" class="item" id="yacht">
                 <img src="yacht.jpg" alt="est">
                 <div class="over">
                     <p>Яхты</p>
                 </div>
             </a>
-            <a class="item">
+            <a href="/" class="item">
                 <img src="package.jpg" alt="est">
-                <div class="over">
+                <div class="over" id="goods">
                     <p>Товары для быта</p>
                 </div>
             </a>
         </div>
 
 
-        <!-- <div class="present active">
+        <div class="present">
             <div class="tbar">
                 <button class="back">
                     <span class="material-symbols-outlined back">close</span>
@@ -75,10 +75,30 @@
             </div>
 
             <div class="present-body">
-                <div class="flex flex-col">
+                <div class="flex flex-col content" id="estate-content" style="display: none;">
+                    <a href="/rent.html" class="item" data-service>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1441/1441353.png " alt="service">
+                        <span class="service">Взять в аренду</span>
+                    </a>
+                    <a href="/" class="item" data-service>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ475O399XAGGGvmP-LJtyBkxbqCmn_0WZ4E5vtg0JuozRvXYJCoo3O76gv-47haf_Ea8&usqp=CAU"
+                            alt="service">
+                        <span class="service">Сдать в аренду</span>
+                    </a>
+                    <a href="/" class="item" data-service>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1441/1441363.png" alt="service">
+                        <span class="service">Купить</span>
+                    </a>
+                    <a href="/" class="item" data-service>
+                        <img src="https://cdn-icons-png.flaticon.com/512/9743/9743049.png" alt="service">
+                        <span class="service">Продать</span>
+                    </a>
+                </div>
+
+                <div class="flex flex-col content" id="yacht-content">
                     <div class="item" data-service>
                         <img src="https://cdn-icons-png.flaticon.com/512/1441/1441353.png " alt="service">
-                        <span class="service">Снять в аренду</span>
+                        <span class="service">Купить</span>
                     </div>
                     <div class="item" data-service>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ475O399XAGGGvmP-LJtyBkxbqCmn_0WZ4E5vtg0JuozRvXYJCoo3O76gv-47haf_Ea8&usqp=CAU"
@@ -87,7 +107,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 </body>
 
 </html>
