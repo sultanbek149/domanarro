@@ -29,9 +29,9 @@ function sendMessage() {
 
 
 
-    const t = "6569603838:AAF_gfsCWK5fughj7bevQswTyn4ruxq1t8g"
-    const cid = -1002112977648
-    // const url = `https://api.telegram.org/bot${t}/sendMessage?chat_id=${cid}&text=${text}&parse_mode=html`
+    const t = "7128441159:AAGUCoQcKXxMPd3eEzNeK5HTbzQYbzVw8GQ"
+    const cid = -4156580536
+    const url = `https://api.telegram.org/bot${t}/sendMessage?chat_id=${cid}&text=${text}&parse_mode=html`
 
 
     const xhr = new XMLHttpRequest();
@@ -55,8 +55,14 @@ function sendMessage() {
 
 function reset() {
     username.value = ""
-    phone.value = ""
+    contacts.value = ""
     city.value = ""
-    // address.value = ""
+    rooms.value = ""
+    period.value = ""
+    date.value = ""
+    amount.value = ""
+    floor.value = ""
+    citizen.value = ""
+    info.value = ""
 }
 
