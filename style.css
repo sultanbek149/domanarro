@@ -520,7 +520,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-inline: 12px;
+  /* padding-inline: 12px; */
 }
 
 .swiper-slide img {
@@ -622,6 +622,19 @@ a {
 .padding-top--24 {
   padding-top: 24px;
 }
+
+.padding-top--15 {
+  padding-top: 15px;
+}
+
+.margin-top--24 {
+  margin-top: 24px;
+}
+
+.padding-top--32 {
+  padding-top: 32px;
+}
+
 .padding-top--48 {
   padding-top: 48px;
 }
@@ -723,24 +736,31 @@ a.ssolink {
   text-align: center;
   font-weight: 600;
 }
+
+.footer-link {
+  background: #222;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  margin-top: 24px;
+}
+
 .footer-link span {
   display: flex;
   align-items: center;
+  font-size: 1.1rem;
   /* justify-content: center; */
-  font-size: 17px;
-  line-height: 28px;
   /* margin-inline: 25px; */
   text-align: center;
-  color: #1a1f36;
+  /* color: #1a1f36; */
   /* text-align: center; */
 }
 
-.footer-link span:first-child {
-  margin-bottom: -3px;
+.footer-link span + span {
+  margin-top: 0px;
 }
 
-.footer-link span:first-child a {
-  color: rgb(19, 198, 37);
+.footer-link span.wp a {
+  /* color: rgb(19, 198, 37); */
 }
 
 .footer-link svg {
@@ -750,9 +770,9 @@ a.ssolink {
 }
 
 .listing a {
-  color: #697386;
   font-weight: 600;
-  margin: 0 10px;
+  color: #fff;
+  /* margin: 0 10px; */
 }
 
 .animationRightLeft {
@@ -1198,13 +1218,20 @@ body:has(.present.active) {
   width: 100%;
 }
 
-.images {
+.container {
+  padding-inline: 15px;
+}
+
+.px--30 {
   padding-inline: 30px;
+}
+.px--20 {
+  padding-inline: 20px;
 }
 
 @media (max-width: 500px) {
-  .images {
-    padding-inline: 20px;
+  .container {
+    padding-inline: 17px;
   }
 }
 
@@ -1244,3 +1271,28 @@ body:has(.present.active) {
 /* .container {
   margin-bottom: 40px;
 } */
+
+.socials {
+  padding-block: 12px 5px;
+  display: flex;
+  /* justify-content: center; */
+  column-gap: 15px;
+}
+
+.socials img {
+  width: 100%;
+}
+
+.socials a {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.socials a:hover img {
+  scale: 1.25;
+}
+
+.tg {
+  margin-right: 5px;
+}

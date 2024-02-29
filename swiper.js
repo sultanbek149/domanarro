@@ -1,6 +1,5 @@
 
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
     centeredSlides: true,
     loop: true,
     speed: 1500,
